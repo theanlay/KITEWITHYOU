@@ -1,0 +1,129 @@
+<html>
+<head>
+  <link rel = "icon" type = "image/X-icon" href = "logo\hnet.com-image (2).ico">
+  <style>
+    .main1{
+      font-size: 250%;
+    }
+    .main2{
+      font-size:15px;
+    }
+    .main4{
+      width:68%;
+      height:8%;
+      border-radius:150px;
+      border:0;
+      padding:2%;
+
+    }
+    .main5{
+      width: 68%;
+      height:8%;
+      border-radius:150px;
+      border:0;
+      padding:2%;
+
+    }
+    .main6{
+      width: 68%;
+      height:8%;
+      border-radius:150px;
+      border:0;
+      padding:2%;
+
+
+    }
+    .main{
+      background:#32a8a8;
+      width:35%;
+      height:50%;
+      border-radius:20px;
+      margin-top:100px;
+    }
+    .main3{
+      height:8%;
+      border-radius:150px;
+      border:0;
+      padding:2%;
+
+    }
+    .ttt{
+      border-radius:200px;
+
+    }
+
+    body{background-image:url(https://cdn.pixabay.com/photo/2016/10/21/14/50/plouzane-1758197_1280.jpg);
+      background-repeat: no-repeat;
+      background-position:center;
+      background-size: cover;
+      background-image:
+    }
+    .btn {
+      border: none;
+      font-family: inherit;
+      position: relative;
+      column-gap: black;
+      }
+    }
+  </style>
+
+</head>
+<body>
+  <form name="myform" method="post" onsubmit="return myfunction()">
+    <center>
+    <div class="main">
+      <div> </div><br>
+      <div class="main1"><b>Sign Up</b></div>
+      <div class="main2">
+          Please fill in this form to create an account!
+      </div><br>
+      <div class="ttt">
+
+        <input type="text" name="firstname" placeholder="firstname" class="main3">
+        <input type="text" name="Lastname" placeholder="Lastname" class="main3">
+
+      </div>
+      <div><br>
+        <input type="email" name="email" placeholder="username@kitewithyou.com" class="main4">
+      </div>
+      <div><br>
+      <input type="password" name="password" placeholder="only 8 alphabets" class="main5">
+      </div>
+      <div ><br>
+        <input type="confirm" name="confirm" placeholder="Confirm Password" class="main6">
+      </div>
+      <div> </div>
+      <div></br>
+        <input type="submit" value="SignUp" class="btn">
+      </div>
+      <div></br>
+        <input type="checkbox">
+        I accept the Terms of Use & Privacy Policy
+      </div>
+  </div>
+  </center>
+  </form>
+  <script>
+    function myfunction(){
+    var email=document.myform.email.value;
+    var password=document.myform.password.value;
+  var confirm=document.myform.confirm.value;
+        p=/^\w{8}$/
+        e=/^[\w]+@+kitewithyou+.+com$/
+    if (!email.match(e)){
+        alert("your email is not correct")
+        return false;
+    }
+    if (!password.match(p)){
+        alert("password is not correct")
+        return false;
+    }
+  if (confirm != password){
+    alert("confirming password is wrong")
+    return false;
+
+  }
+}
+  </script>
+</body>
+</html>
