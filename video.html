@@ -47,31 +47,6 @@
 	<a class = "main "href = "index.html">Go back to home</a>
 	<h1>The open soure Books that you can read </h1>
 	<hr >
-
- <input type="text" name="search" value="" id= "myinput" onkeyup="searchfunction" placeholder="search" autocomplete="off">
-
-	<script type="text/javascript">
-	function searchFunction() {
-	    var input, filter, ul, li, a, i;
-	    input = document.getElementById('myinput');
-	    filter = input.value.toUpperCase();
-	    ul = document.getElementById('wrapper');
-	    li = ul.getElementsByTagName('th');
-
-	    for(i=0 ; i< li.length; i++){
-	        a = li[i].getElementsByTagName('a')[0];
-	        if(a.innerHTML.toUpperCase().indexOf(filter) > -1){
-	            li[i].style.display = "";
-	        }
-
-	        else{
-	            li[i].style.display = 'none';
-	        }
-	    }
-	}
-
-	
-
 	</script>
 
 	<table id="wrapper">
