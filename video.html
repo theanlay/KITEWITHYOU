@@ -1,67 +1,108 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
-	<link rel = "icon" type = "image/X-icon" href = "logo\hnet.com-image (2).ico">
-	<style type="text/css">
-		#container ul{
-			list-style: none;
-		}
-		#container ul li{
-			background-color: #fd8c00;
-			width: 150px;
-			height: 50px;
-			border: 1px solid white;
-			line-height: 50px;
+	<title> Books </title>
+<link rel = "icon" type = "image/X-icon" href = "logo\hnet.com-image (2).ico">
+	<style type = "text/css">
+		h1{
 			text-align: center;
-			float: left;
-			color: white;
-			font-size: 18px;
+		}
+		.main{
+			font-size: 20px;
+			color: rgb(0, 185, 255);
+		}
+		.hr{
+			size: 2px;
+		}
+		.boodcapture{
+			text-align: left;
+			margin: 0px;
+		}
+		.gotoup{
+			font-size: 30px;
+		}
+		.scaled:hover{
+			transform: scale(1.5);
+		}
+		table#container{
+			width: 100%;
+		}
+		.scaled{
+			height:320px;
+			width: 200px;
+			align-self: flex-start;
+
 
 		}
-		#container ul li:hover{
-			background-color: #ff0000;
-		}
-		*{
-			margin: 0px;
-			padding:0px;
-		}
-		#container ul ul{
-			display: none;
-		}
-		#container ul li:hover > ul{
-			display: block;
+		.scaled_text{
+			height:320px;
+			width: 200px;
+			align-self: flex-start;
+
 		}
 
 	</style>
 </head>
-<body>
-	<div id=container>
-		<ul>
-			<li>Khmer song
-				<ul>
-					<li><a href="samllworldsmallban.html">SmallwordSmallban</a></li>
-					<li></li>
-					<li></li>
-				</ul>
+<body bgcolor = "#f2f2f2" style="background: rgb(190,190,190);">
+	<a class = "main "href = "index.html">Go back to home</a>
+	<h1>The open soure Books that you can read </h1>
+	<hr >
 
-			</li>
+ <input type="text" name="search" value="" id= "myinput" onkeyup="searchfunction" placeholder="search" autocomplete="off">
 
-			<li>hollywood movies
-				<ul>
-					<li><a href="">123movie</a></li>
+	<script type="text/javascript">
+	function searchFunction() {
+	    var input, filter, ul, li, a, i;
+	    input = document.getElementById('myinput');
+	    filter = input.value.toUpperCase();
+	    ul = document.getElementById('wrapper');
+	    li = ul.getElementsByTagName('th');
 
-				</ul>
-			</li>
-			<li>Learning English
-				<ul>
-					<li><a href="TEDvideo.html">TED</a></li>
-				</ul>
-			</li>
-			<li>asf</li>
-		</ul>
-	 </div>
+	    for(i=0 ; i< li.length; i++){
+	        a = li[i].getElementsByTagName('a')[0];
+	        if(a.innerHTML.toUpperCase().indexOf(filter) > -1){
+	            li[i].style.display = "";
+	        }
 
+	        else{
+	            li[i].style.display = 'none';
+	        }
+	    }
+	}
+
+	
+
+	</script>
+
+	<table id="wrapper">
+
+		<tr>
+
+			<th><a href="Videopage/The_Dark_World.html"><img class= "scaled" src = "Book\cover_book\The_Dark_World.jpg"> </a> </br>
+
+				Master your time </br> Tracy, Brian</br>		<span style="font-size:200%;color:yellow;">&starf;</span>		<span style="font-size:200%;color:yellow;">&star;</span>
+				<span style="font-size:200%;color:yellow;">&star;</span>		<span style="font-size:200%;color:yellow;">&star; </span>		<span style="font-size:200%;color:yellow;">&star; </span>
+
+			</th>
+			
+
+
+
+		</tr>
+
+
+
+
+
+	</table>
+
+
+
+	<p>here you can click to make request some book</p>
+	<a href = "mailto:thorn.theanlay19@kit.edu.kh">Click</a>
+
+
+	<p align = "center" class = "gotoup">	<a href = "#top">GO to the TOP </a></p>
 
 </body>
 </html>

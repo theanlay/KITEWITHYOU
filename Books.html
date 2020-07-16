@@ -24,7 +24,7 @@
 		.scaled:hover{
 			transform: scale(1.5);
 		}
-		table.container{
+		table#container{
 			width: 100%;
 		}
 		.scaled{
@@ -48,7 +48,31 @@
 	<h1>The open soure Books that you can read </h1>
 	<hr >
 
-	<table class="container">
+ <input type="text" name="search" value="" id= "myinput" onkeyup="searchfunction" placeholder="search" autocomplete="off">
+
+	<script type="text/javascript">
+	function searchFunction() {
+	    var input, filter, ul, li, a, i;
+	    input = document.getElementById('myinput');
+	    filter = input.value.toUpperCase();
+	    ul = document.getElementById('wrapper');
+	    li = ul.getElementsByTagName('th');
+
+	    for(i=0 ; i< li.length; i++){
+	        a = li[i].getElementsByTagName('a')[0];
+	        if(a.innerHTML.toUpperCase().indexOf(filter) > -1){
+	            li[i].style.display = "";
+	        }
+
+	        else{
+	            li[i].style.display = 'none';
+	        }
+	    }
+	}
+
+	</script>
+
+	<table id="wrapper">
 		<tr>
 
 
@@ -207,6 +231,223 @@
 			</th>
 
 		</tr>
+
+
+
+		<tr>
+			<th><a href = "https://online.pubhtml5.com/xoxn/toas/"><img class= "scaled" src = "Book\cover_book\AlgorithmsNotesForProfessionals.PNG" ></a><br>
+					AlgorithmsNotesForProfessionals	<br>			<span style="font-size:200%;color:yellow;">&starf;</span>		<span style="font-size:200%;color:yellow;">&star;</span>
+				<span style="font-size:200%;color:yellow;">&star;</span>		<span style="font-size:200%;color:yellow;">&star; </span>		<span style="font-size:200%;color:yellow;">&star; </span>
+			</th>
+
+			<th><a href = ""><img class= "scaled" src = "Book\cover_book\AndroidNotesForProfessionals.PNG" ></a><br>
+					AndroidNotesForProfessionals<br>			<span style="font-size:200%;color:yellow;">&starf;</span>		<span style="font-size:200%;color:yellow;">&star;</span>
+				<span style="font-size:200%;color:yellow;">&star;</span>		<span style="font-size:200%;color:yellow;">&star; </span>		<span style="font-size:200%;color:yellow;">&star; </span>
+			</th>
+
+
+			<th><a href = ""><img class= "scaled" src = "Book\cover_book\Angular2NotesForProfessionals.PNG" ></a><br>
+					Angular2NotesForProfessionals<br>			<span style="font-size:200%;color:yellow;">&starf;</span>		<span style="font-size:200%;color:yellow;">&star;</span>
+				<span style="font-size:200%;color:yellow;">&star;</span>		<span style="font-size:200%;color:yellow;">&star; </span>		<span style="font-size:200%;color:yellow;">&star; </span>
+			</th>
+
+
+			<th><a href = ""><img class= "scaled" src = "Book\cover_book\AngularJSNotesForProfessionals.PNG" ></a><br>
+					AngularJSNotesForProfessionals<br>			<span style="font-size:200%;color:yellow;">&starf;</span>		<span style="font-size:200%;color:yellow;">&star;</span>
+				<span style="font-size:200%;color:yellow;">&star;</span>		<span style="font-size:200%;color:yellow;">&star; </span>		<span style="font-size:200%;color:yellow;">&star; </span>
+			</th>
+
+		</tr>
+
+
+
+		<tr>
+			<th><a href = ""><img class= "scaled" src = "Book\cover_book\BashNotesForProfessionals.PNG" ></a><br>
+					BashNotesForProfessionals	<br>			<span style="font-size:200%;color:yellow;">&starf;</span>		<span style="font-size:200%;color:yellow;">&star;</span>
+				<span style="font-size:200%;color:yellow;">&star;</span>		<span style="font-size:200%;color:yellow;">&star; </span>		<span style="font-size:200%;color:yellow;">&star; </span>
+			</th>
+
+			<th><a href = ""><img class= "scaled" src = "Book\cover_book\CNotesForProfessionals.PNG" ></a><br>
+					CNotesForProfessionals	<br>			<span style="font-size:200%;color:yellow;">&starf;</span>		<span style="font-size:200%;color:yellow;">&star;</span>
+				<span style="font-size:200%;color:yellow;">&star;</span>		<span style="font-size:200%;color:yellow;">&star; </span>		<span style="font-size:200%;color:yellow;">&star; </span>
+			</th>
+
+
+			<th><a href = ""><img class= "scaled" src = "Book\cover_book\CSharpNotesForProfessionals.PNG" ></a><br>
+					CSharpNotesForProfessionals	<br>			<span style="font-size:200%;color:yellow;">&starf;</span>		<span style="font-size:200%;color:yellow;">&star;</span>
+				<span style="font-size:200%;color:yellow;">&star;</span>		<span style="font-size:200%;color:yellow;">&star; </span>		<span style="font-size:200%;color:yellow;">&star; </span>
+			</th>
+
+
+			<th><a href = ""><img class= "scaled" src = "Book\cover_book\CSSNotesForProfessionals.PNG" ></a><br>
+					CSSNotesForProfessionals	<br>			<span style="font-size:200%;color:yellow;">&starf;</span>		<span style="font-size:200%;color:yellow;">&star;</span>
+				<span style="font-size:200%;color:yellow;">&star;</span>		<span style="font-size:200%;color:yellow;">&star; </span>		<span style="font-size:200%;color:yellow;">&star; </span>
+			</th>
+
+		</tr>
+
+
+
+		<tr>
+			<th><a href = ""><img class= "scaled" src = "Book\cover_book\DotNETFrameworkNotesForProfessionals.PNG" ></a><br>
+					DotNETFrameworkNotesForProfessionals	<br>			<span style="font-size:200%;color:yellow;">&starf;</span>		<span style="font-size:200%;color:yellow;">&star;</span>
+				<span style="font-size:200%;color:yellow;">&star;</span>		<span style="font-size:200%;color:yellow;">&star; </span>		<span style="font-size:200%;color:yellow;">&star; </span>
+			</th>
+
+			<th><a href = ""><img class= "scaled" src = "Book\cover_book\GitNotesForProfessionals.PNG" ></a><br>
+					GitNotesForProfessionals	<br>			<span style="font-size:200%;color:yellow;">&starf;</span>		<span style="font-size:200%;color:yellow;">&star;</span>
+				<span style="font-size:200%;color:yellow;">&star;</span>		<span style="font-size:200%;color:yellow;">&star; </span>		<span style="font-size:200%;color:yellow;">&star; </span>
+			</th>
+
+
+			<th><a href = ""><img class= "scaled" src = "Book\cover_book\HaskellNotesForProfessionals.PNG" ></a><br>
+					HaskellNotesForProfessionals	<br>			<span style="font-size:200%;color:yellow;">&starf;</span>		<span style="font-size:200%;color:yellow;">&star;</span>
+				<span style="font-size:200%;color:yellow;">&star;</span>		<span style="font-size:200%;color:yellow;">&star; </span>		<span style="font-size:200%;color:yellow;">&star; </span>
+			</th>
+
+
+			<th><a href = ""><img class= "scaled" src = "Book\cover_book\HTML5CanvasNotesForProfessionals.PNG" ></a><br>
+					HTML5CanvasNotesForProfessionals	<br>			<span style="font-size:200%;color:yellow;">&starf;</span>		<span style="font-size:200%;color:yellow;">&star;</span>
+				<span style="font-size:200%;color:yellow;">&star;</span>		<span style="font-size:200%;color:yellow;">&star; </span>		<span style="font-size:200%;color:yellow;">&star; </span>
+			</th>
+
+		</tr>
+
+
+
+		<tr>
+			<th><a href = ""><img class= "scaled" src = "Book\cover_book\HTML5NotesForProfessionals.PNG" ></a><br>
+					HTML5NotesForProfessionals	<br>			<span style="font-size:200%;color:yellow;">&starf;</span>		<span style="font-size:200%;color:yellow;">&star;</span>
+				<span style="font-size:200%;color:yellow;">&star;</span>		<span style="font-size:200%;color:yellow;">&star; </span>		<span style="font-size:200%;color:yellow;">&star; </span>
+			</th>
+
+			<th><a href = ""><img class= "scaled" src = "Book\cover_book\iOSNotesForProfessionals.PNG" ></a><br>
+					iOSNotesForProfessionals	<br>			<span style="font-size:200%;color:yellow;">&starf;</span>		<span style="font-size:200%;color:yellow;">&star;</span>
+				<span style="font-size:200%;color:yellow;">&star;</span>		<span style="font-size:200%;color:yellow;">&star; </span>		<span style="font-size:200%;color:yellow;">&star; </span>
+			</th>
+
+
+			<th><a href = ""><img class= "scaled" src = "Book\cover_book\JavaNotesForProfessionals.PNG" ></a><br>
+					JavaNotesForProfessionals	<br>			<span style="font-size:200%;color:yellow;">&starf;</span>		<span style="font-size:200%;color:yellow;">&star;</span>
+				<span style="font-size:200%;color:yellow;">&star;</span>		<span style="font-size:200%;color:yellow;">&star; </span>		<span style="font-size:200%;color:yellow;">&star; </span>
+			</th>
+
+
+			<th><a href = ""><img class= "scaled" src = "Book\cover_book\JavaScriptNotesForProfessionals.PNG" ></a><br>
+					JavaScriptNotesForProfessionals<br>			<span style="font-size:200%;color:yellow;">&starf;</span>		<span style="font-size:200%;color:yellow;">&star;</span>
+				<span style="font-size:200%;color:yellow;">&star;</span>		<span style="font-size:200%;color:yellow;">&star; </span>		<span style="font-size:200%;color:yellow;">&star; </span>
+			</th>
+
+		</tr>
+
+
+		<tr>
+			<th><a href = ""><img class= "scaled" src = "Book\cover_book\jQueryNotesForProfessionals.PNG" ></a><br>
+					jQueryNotesForProfessionals<br>			<span style="font-size:200%;color:yellow;">&starf;</span>		<span style="font-size:200%;color:yellow;">&star;</span>
+				<span style="font-size:200%;color:yellow;">&star;</span>		<span style="font-size:200%;color:yellow;">&star; </span>		<span style="font-size:200%;color:yellow;">&star; </span>
+			</th>
+
+			<th><a href = ""><img class= "scaled" src = "Book\cover_book\LinuxNotesForProfessionals.PNG" ></a><br>
+					LinuxNotesForProfessionals	<br>			<span style="font-size:200%;color:yellow;">&starf;</span>		<span style="font-size:200%;color:yellow;">&star;</span>
+				<span style="font-size:200%;color:yellow;">&star;</span>		<span style="font-size:200%;color:yellow;">&star; </span>		<span style="font-size:200%;color:yellow;">&star; </span>
+			</th>
+
+
+			<th><a href = ""><img class= "scaled" src = "Book\cover_book\MongoDBNotesForProfessionals.PNG" ></a><br>
+					MongoDBNotesForProfessionals	<br>			<span style="font-size:200%;color:yellow;">&starf;</span>		<span style="font-size:200%;color:yellow;">&star;</span>
+				<span style="font-size:200%;color:yellow;">&star;</span>		<span style="font-size:200%;color:yellow;">&star; </span>		<span style="font-size:200%;color:yellow;">&star; </span>
+			</th>
+
+
+			<th><a href = ""><img class= "scaled" src = "Book\cover_book\MySQLNotesForProfessionals.PNG" ></a><br>
+					MySQLNotesForProfessionals	<br>			<span style="font-size:200%;color:yellow;">&starf;</span>		<span style="font-size:200%;color:yellow;">&star;</span>
+				<span style="font-size:200%;color:yellow;">&star;</span>		<span style="font-size:200%;color:yellow;">&star; </span>		<span style="font-size:200%;color:yellow;">&star; </span>
+			</th>
+
+		</tr>
+
+
+
+		<tr>
+			<th><a href = ""><img class= "scaled" src = "Book\cover_book\NodeJSNotesForProfessionals.PNG" ></a><br>
+					NodeJSNotesForProfessionals<br>			<span style="font-size:200%;color:yellow;">&starf;</span>		<span style="font-size:200%;color:yellow;">&star;</span>
+				<span style="font-size:200%;color:yellow;">&star;</span>		<span style="font-size:200%;color:yellow;">&star; </span>		<span style="font-size:200%;color:yellow;">&star; </span>
+			</th>
+
+			<th><a href = ""><img class= "scaled" src = "Book\cover_book\OracleDatabaseNotesForProfessionals.PNG" ></a><br>
+					OracleDatabaseNotesForProfessionals<br>			<span style="font-size:200%;color:yellow;">&starf;</span>		<span style="font-size:200%;color:yellow;">&star;</span>
+				<span style="font-size:200%;color:yellow;">&star;</span>		<span style="font-size:200%;color:yellow;">&star; </span>		<span style="font-size:200%;color:yellow;">&star; </span>
+			</th>
+
+
+			<th><a href = ""><img class= "scaled" src = "Book\cover_book\PHPNotesForProfessionals.PNG" ></a><br>
+					PHPNotesForProfessionals	<br>			<span style="font-size:200%;color:yellow;">&starf;</span>		<span style="font-size:200%;color:yellow;">&star;</span>
+				<span style="font-size:200%;color:yellow;">&star;</span>		<span style="font-size:200%;color:yellow;">&star; </span>		<span style="font-size:200%;color:yellow;">&star; </span>
+			</th>
+
+
+			<th><a href = ""><img class= "scaled" src = "Book\cover_book\PowerShellNotesForProfessionals.PNG" ></a><br>
+					PowerShellNotesForProfessionals	<br>			<span style="font-size:200%;color:yellow;">&starf;</span>		<span style="font-size:200%;color:yellow;">&star;</span>
+				<span style="font-size:200%;color:yellow;">&star;</span>		<span style="font-size:200%;color:yellow;">&star; </span>		<span style="font-size:200%;color:yellow;">&star; </span>
+			</th>
+
+		</tr>
+
+
+		<tr>
+			<th><a href = ""><img class= "scaled" src = "Book\cover_book\PythonNotesForProfessionals.PNG" ></a><br>
+					PythonNotesForProfessionals<br>			<span style="font-size:200%;color:yellow;">&starf;</span>		<span style="font-size:200%;color:yellow;">&star;</span>
+				<span style="font-size:200%;color:yellow;">&star;</span>		<span style="font-size:200%;color:yellow;">&star; </span>		<span style="font-size:200%;color:yellow;">&star; </span>
+			</th>
+
+			<th><a href = ""><img class= "scaled" src = "Book\cover_book\ReactJSNotesForProfessionals.PNG" ></a><br>
+					ReactJSNotesForProfessionals	<br>			<span style="font-size:200%;color:yellow;">&starf;</span>		<span style="font-size:200%;color:yellow;">&star;</span>
+				<span style="font-size:200%;color:yellow;">&star;</span>		<span style="font-size:200%;color:yellow;">&star; </span>		<span style="font-size:200%;color:yellow;">&star; </span>
+			</th>
+
+
+			<th><a href = ""><img class= "scaled" src = "Book\cover_book\ReactNativeNotesForProfessionals.PNG" ></a><br>
+					ReactNativeNotesForProfessionals<br>			<span style="font-size:200%;color:yellow;">&starf;</span>		<span style="font-size:200%;color:yellow;">&star;</span>
+				<span style="font-size:200%;color:yellow;">&star;</span>		<span style="font-size:200%;color:yellow;">&star; </span>		<span style="font-size:200%;color:yellow;">&star; </span>
+			</th>
+
+
+			<th><a href = ""><img class= "scaled" src = "Book\cover_book\RNotesForProfessionals.PNG" ></a><br>
+					RNotesForProfessionals<br>			<span style="font-size:200%;color:yellow;">&starf;</span>		<span style="font-size:200%;color:yellow;">&star;</span>
+				<span style="font-size:200%;color:yellow;">&star;</span>		<span style="font-size:200%;color:yellow;">&star; </span>		<span style="font-size:200%;color:yellow;">&star; </span>
+			</th>
+
+		</tr>
+
+
+
+		<tr>
+			<th><a href = ""><img class= "scaled" src = "Book\cover_book\RubyNotesForProfessionals.PNG" ></a><br>
+					RubyNotesForProfessionals<br>			<span style="font-size:200%;color:yellow;">&starf;</span>		<span style="font-size:200%;color:yellow;">&star;</span>
+				<span style="font-size:200%;color:yellow;">&star;</span>		<span style="font-size:200%;color:yellow;">&star; </span>		<span style="font-size:200%;color:yellow;">&star; </span>
+			</th>
+
+			<th><a href = ""><img class= "scaled" src = "Book\cover_book\SwiftNotesForProfessionals.PNG" ></a><br>
+					SwiftNotesForProfessionals<br>			<span style="font-size:200%;color:yellow;">&starf;</span>		<span style="font-size:200%;color:yellow;">&star;</span>
+				<span style="font-size:200%;color:yellow;">&star;</span>		<span style="font-size:200%;color:yellow;">&star; </span>		<span style="font-size:200%;color:yellow;">&star; </span>
+			</th>
+
+
+			<th><a href = ""><img class= "scaled" src = "Book\cover_book\.PNG" ></a><br>
+					<br>			<span style="font-size:200%;color:yellow;">&starf;</span>		<span style="font-size:200%;color:yellow;">&star;</span>
+				<span style="font-size:200%;color:yellow;">&star;</span>		<span style="font-size:200%;color:yellow;">&star; </span>		<span style="font-size:200%;color:yellow;">&star; </span>
+			</th>
+
+
+			<th><a href = ""><img class= "scaled" src = "Book\cover_book\.PNG" ></a><br>
+					<br>			<span style="font-size:200%;color:yellow;">&starf;</span>		<span style="font-size:200%;color:yellow;">&star;</span>
+				<span style="font-size:200%;color:yellow;">&star;</span>		<span style="font-size:200%;color:yellow;">&star; </span>		<span style="font-size:200%;color:yellow;">&star; </span>
+			</th>
+
+		</tr>
+
+
+
 
 	</table>
 
